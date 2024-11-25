@@ -1,0 +1,634 @@
+.BG {
+  background-color: #f2f5f7;
+}
+.element-widget-divider {
+  display: flex;
+  justify-content: center;
+
+  & .element-divider-seperator {
+    border: 1px solid #38220f;
+    width: 100px;
+    /* margin-top: 1rem; */
+    /* margin-bottom: 1rem; */
+  }
+}
+
+.Fore {
+  background-color: white;
+}
+
+#whyMe {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  padding: 20px 0px;
+}
+.whyMe_container {
+  margin: 5% 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  gap: 2rem;
+}
+.description {
+  width: 250px;
+
+  & p {
+    color: #333333;
+  }
+
+  & img {
+    width: 52px;
+  }
+}
+
+/*-----------ABOUT SECTION----------*/
+#aboutBackground {
+  /* color: #ffffff; */
+  color: #0cd268;
+  /* font-weight: bolder; */
+  /* width: 100%; */
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-size: cover;
+  position: relative;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+      rgba(0, 150, 214, 0.4),
+      rgba(0, 132, 214, 0.4)
+    ),
+    url("/agricImg/plant.jpeg");
+}
+#aboutBackground_container #aboutTitle {
+  font-size: 3rem;
+  /* border: 1px solid red; */
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+#About {
+  background-color: #f2f5f7;
+  color: black;
+}
+.about_container {
+  line-height: 1.88rem;
+}
+.element-divider-seperator {
+  display: flex;
+  /* border: 2px solid #0084d6; */
+  border: 2px solid #0cd268;
+  width: 80px;
+  margin-left: 0;
+  margin-bottom: 1rem;
+}
+.about_content-1 {
+  margin: 3rem;
+  /* padding: 1rem; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  align-items: center;
+  /* left: 45%;
+  top: 45%; */
+  justify-content: center;
+  min-height: 50vh;
+  object-fit: cover;
+  text-align: left;
+  /* margin-right: 10px; */
+
+  & img {
+    width: 630px;
+    height: 350px;
+  }
+}
+.about_content-1 section {
+  background-color: white;
+  padding: 3rem;
+  font-size: 15px;
+  & .h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+}
+.about_content-2 {
+  /* border: 1px solid purple; */
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  padding: 3rem;
+  justify-self: center;
+
+  & img {
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  & p {
+    color: #333333;
+  }
+}
+.about_content-2 .element-widget-divider {
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 1rem; */
+
+  & .element-divider-seperator {
+    display: flex;
+    border: 2px solid #0cd268;
+    width: 80px;
+  }
+}
+
+section h1 {
+  font-size: 3rem;
+}
+section h3 {
+  font-size: 20px;
+  color: #0cd268;
+  font-weight: bold;
+}
+
+.gridFlex_container {
+  /* border: 1px solid orange; */
+  display: flex;
+  justify-content: center;
+}
+
+.about_content-2 .gridFlex_content {
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-columns:  repeat(auto-fit, minmax(min(20rem, 100%), 1fr)); */
+  /* justify-items: center; */
+  min-height: 50vh;
+  /* border: 1px solid blue; */
+  width: 70%;
+  padding: 3rem;
+}
+.gridFlex_content div {
+  background-color: #f5f7f9;
+  border: 1px solid #3333330a;
+  border-radius: 0.3rem;
+  line-height: 0.5rem;
+  padding: 30px;
+  height: 200px;
+  width: 250px;
+}
+
+.about-content-3 {
+  width: 100%;
+  text-align: left;
+  /* padding-top: 0px;
+  padding-bottom: 0px; */
+  background-size: cover;
+  position: relative;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/public/images/teamWork.avif");
+}
+.about-content-3_container {
+  background-color: #f5f7f9;
+  /* font-size: 1.3em; */
+  line-height: 0px;
+  font-family: "Lato", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  /* padding-left: 4.5rem;
+  padding-right: 2.2rem; */
+  width: 400px;
+  height: 450px;
+
+  & h2 {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 42px;
+  }
+}
+.about-content-3_container .element-widget-divider {
+  padding-top: 9rem;
+  display: flex;
+  justify-content: center;
+
+  & .element-divider-seperator {
+    display: flex;
+    border: 2px solid #0084d6;
+    width: 80px;
+  }
+}
+.about-3_link {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.about-3_link ul {
+}
+.about-3_link ul li {
+  display: inline-block;
+  list-style: none;
+  /* margin-right: 1.5rem;
+  margin-top: 5rem; */
+  margin: 1.5rem;
+}
+.about-3_link ul {
+  padding: 0px 1rem;
+}
+
+
+
+@media (max-width: 640px) {
+  #header {
+    color: #ffffff;
+    /* width: 100%; */
+    text-align: left;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background-size: cover;
+    position: relative;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("/agricImg/plant copy.jpeg");
+  }
+  .header_container {
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+  .header_container h1 {
+  }
+  .header_container h5 {
+    font-size: 24px;
+  }
+
+  .header_container button {
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 13px 28px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+  .header_container {
+    /* padding-left: 3.2rem; */
+  }
+
+  #FeaturedProducts {
+    & #h4 {
+      font-size: 35px;
+    }
+  }
+  .product_cards img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .midBackground_content {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-left: 2.3rem;
+    padding-right: 1rem;
+    & h4 {
+      font-size: 20px;
+    }
+    & button {
+      font-size: 12px;
+    }
+    /* padding-left: 7%;
+  padding-right: 8%; */
+  }
+
+  #aboutBackground {
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 70px;
+    background-size: 130%;
+    position: relative;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(
+        rgba(0, 150, 214, 0.4),
+        rgba(0, 132, 214, 0.4)
+      ),
+      url("/agricImg/plant.jpeg");
+  }
+
+  .aboutBackground_container {
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
+
+  .about_content-1 {
+    margin: 3rem;
+    /* padding: 1rem; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    & img {
+      width: 100%;
+      height: 100%;
+      /* height: 200px; */
+    }
+  }
+
+  .about_content-1 section .h2 {
+    font-size: 30px;
+    /* color: red; */
+  }
+  .about_content-1 section p {
+    font-size: 12.5px;
+    /* line-height: 1.5rem; */
+    /* color: red; */
+  }
+
+  .about_content-2 {
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 0rem;
+    overflow: visible;
+    /* & .about-content-2_des{
+      padding: 3rem;
+    } */
+  }
+  .about_content-2_des {
+    /* padding: 3rem; */
+    padding: 3rem 3rem 0rem 3rem;
+  }
+
+  .about_content-2 section h1 {
+    font-size: 30px;
+    /* text-align: center; */
+  }
+  .about_content-2 h3{
+    color: #0cd268;
+    font-weight: bold;
+  }
+  .about_content-2 section p {
+    font-size: 12.5px;
+    /* text-align: center; */
+  }
+  .gridFlex_container {
+    /* overflow: visible; */
+  }
+
+  .gridFlex_content {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* width: 150%; */
+    padding: 0;
+  }
+  .gridFlex_content .imageCon {
+    background-color: #f5f7f9;
+    /* border: 1px solid green; */
+    border: 1px solid #3333330a;
+    border-radius: 0.3rem;
+    line-height: 0.5rem;
+    height: 150px;
+    width: 110px;
+    padding: 1px;
+    & h3 {
+      font-size: 12.5px;
+    }
+    & p {
+      font-size: 12px;
+      color: #333333;
+    }
+    & img {
+      /* border: 1px solid red; */
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      margin-top: 10px;
+      /* margin-bottom: 10px; */
+    }
+  }
+
+  .about-content-3 {
+    width: 100%;
+    text-align: left;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-size: cover;
+    position: relative;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("/public/images/teamWork.avif");
+  }
+  .about-content-3_container {
+    background-color: #f5f7f9;
+    /* font-size: 1.3em; */
+    line-height: 0px;
+    font-family: "Lato", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    /* padding-left: 4.5rem;
+  padding-right: 2.2rem; */
+    width: 75%;
+    height: 32%;
+
+    & h2 {
+      padding-top: 1rem;
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+  .about-content-3_container .element-widget-divider {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+
+    & .element-divider-seperator {
+      display: flex;
+      border: 2px solid #38220f;
+      width: 80px;
+    }
+  }
+  .about-3_link {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .about-3_link ul {
+  }
+  .about-3_link ul li {
+    display: inline-block;
+    list-style: none;
+    /* margin-right: 1.5rem;
+  margin-top: 5rem; */
+    margin: 1rem;
+    & svg {
+      height: 15px;
+      width: 15px;
+    }
+  }
+  .about-3_link ul {
+    padding: 0px 1rem;
+  }
+
+
+  .whyMe_container {
+    margin: 5% 0;
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .description {
+    width: 150px;
+
+    & p {
+      color: #333333;
+      font-size: 12.5px;
+    }
+
+    & img {
+      width: 25px;
+      height: 25px;
+    }
+    & h3 {
+      font-size: 14px;
+    }
+  }
+  #wrapper {
+    margin: 1rem;
+  }
+
+  .Span {
+    background-color: white;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 1rem;
+    line-height: 1.8rem;
+    /* padding-left: 1.5rem;
+  padding-right: 1.5rem; */
+  }
+  #productDescription {
+    background-color: #f5f7f9;
+    padding: 1.5rem;
+  }
+  .productDescription_content-1 img {
+    height: 310px;
+    width: 310px;
+  }
+  .productDescription_content-1 section {
+    /* width: 46%; */
+    & button {
+      background-color: #0084d6;
+      border: 1px solid #0084d6;
+      margin-bottom: 5px;
+      color: white;
+      cursor: pointer;
+      font-family: "Lato", sans-serif;
+      font-size: 12.768px;
+      font-weight: 590;
+      letter-spacing: 1px;
+      padding: 0.6rem 5rem;
+      &:hover {
+        background-color: #0075be;
+        color: #ffffff;
+        border: 1px solid #0075be;
+      }
+    }
+  }
+
+  .productDescription_content-1 p,
+  .productDescription_content-2 p {
+    font-size: 12px;
+    line-height: 1.5rem;
+  }
+  .productDescription_content-1 section h1 {
+    font-size: 30px;
+  }
+  .productDescription_content-1 section h2 {
+    font-size: 20px;
+  }
+  .relatedProducts_cards img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .productDescription_content-3 #title {
+    font-size: 24px;
+  }
+  #wrapper {
+    font-size: 12px;
+  }
+
+  td .btn {
+    background-color: #0084d6;
+    border: 1px solid #0084d6;
+    margin-bottom: 5px;
+    color: white;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    font-size: 12.8px;
+    font-weight: 590;
+    letter-spacing: 1px;
+    padding: 0.5rem 0.6rem;
+    margin: 0px 2px;
+    &:hover {
+      background-color: #0075be;
+      color: #ffffff;
+      border: 1px solid #0075be;
+    }
+  }
+
+  td svg {
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+  }
+}
+
+.abstract{
+    height: 20vh;
+    display: flex;
+}

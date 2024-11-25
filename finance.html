@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>Agrico</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Responsive-->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- fevicon -->
+  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <!-- Tweaks for older IEs-->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- owl stylesheets -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+    media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header Section Start -->
+  <div class="header-section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="agricImg/Agrico_logo.jpeg" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Marketplace
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Marketplace.html">Explore</a>
+                <a class="dropdown-item" href="DVN.html">Drivers Verification Number</a>
+                <a class="dropdown-item" href="finance.html">Finance</a>
+                <a class="dropdown-item" href="farm-machinaries.html">Machineries</a>
+                <a class="dropdown-item" href="cart.html">Cart</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">E-Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Messenger.html">Messenger</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">
+                <i class="fa-solid fa-user fa-lg"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">
+                <i class="fa fa-shopping-cart" id="cart-icon"> <span id="cart-count">0</span></i>
+                <!-- </div> -->
+                <!-- <p id="cart-count" style="color: #000; font-weight: bold;">Cart (0)</p> -->
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Header Section End -->
+  <!-- About Agrico Loan Program section start -->
+  <div class="about_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="about_taital">
+            <h4 class="about_text">About Agrico Loan Program</h4>
+            <h1 class="highest_text">Empowering Farmers through Accessible Financing</h1>
+            <p class="lorem_text">Agrico Loan Program supports Nigerian and African farmers with affordable loans to
+              improve crop yields, enhance market access, and increase income.</p>
+            <p class="lorem_text">To qualify, farmers must provide all required details, including business registration
+              documents, farming experience, financial records, and valid identification.</p>
+            <p class="lorem_text">Our program offers competitive interest rates, flexible repayment plans, and
+              personalized financial advisory services.</p>
+            <div class="read_bt"><a href="#">Apply for a Loan Today</a></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="image_2"><img src="images/flowers.png" alt="Agrico Farmer"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    /* Global Styles */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+
+    /* Image Styling */
+
+    .image_2 {
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .image_2 img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+
+    /* Loan Section Styling */
+
+    .loan_section {
+      background-color: #fff;
+      padding: 50px 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .loan_text {
+      font-size: 36px;
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .loan_description {
+      font-size: 20px;
+      color: #666;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .loan_card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .loan_title {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .loan_details {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .apply_loan_bt {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .loan_button {
+      background-color: #008000;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 128, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .loan_button:hover {
+      background-color: #006400;
+      box-shadow: 0 0 10px rgba(0, 128, 0, 0.4);
+      transform: scale(1.1);
+    }
+
+
+    /* Form Styling */
+    /* Form Styling */
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-control:focus {
+      border-color: #aaa;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    select.form-control {
+      height: auto;
+    }
+
+    textarea.form-control {
+      resize: vertical;
+    }
+
+    .btn-primary {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background-color: #444;
+    }
+
+
+    /* Responsive Design */
+
+    @media (max-width: 1200px) {
+      .loan_card {
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .loan_title {
+        font-size: 24px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .loan_section {
+        padding: 30px 0;
+      }
+
+      .loan_card {
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .loan_text {
+        font-size: 28px;
+      }
+
+      .loan_description {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .image_2 img {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+      }
+
+      .loan_button {
+        padding: 10px 15px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .loan_title {
+        font-size: 20px;
+      }
+
+      .loan_description {
+        font-size: 14px;
+      }
+    }
+
+
+    /* Steps Section Styling */
+
+    .steps_section {
+      background-color: #f9f9f9;
+      padding: 50px 0;
+    }
+
+    .steps_text {
+      font-size: 36px;
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .steps_description {
+      font-size: 20px;
+      color: #666;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .steps_container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .step_card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      width: calc(33.33% - 20px);
+      margin: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .step_number {
+      font-size: 28px;
+      color: #333;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .step_title {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .step_description {
+      font-size: 16px;
+      color: #666;
+    }
+
+
+    /* Sponsored By Styling */
+
+    .sponsored_by {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .sponsored_by img {
+      width: 50px;
+      height: 20px;
+      margin-left: 10px;
+    }
+
+
+    /* Modal Styling */
+
+    .modal-dialog {
+      max-width: 800px;
+    }
+
+    .modal-content {
+      padding: 20px;
+    }
+
+    .modal-header {
+      background-color: #f9f9f9;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .modal-title {
+      font-size: 24px;
+    }
+  </style>
+  <!-- Loan Application Steps Section Start -->
+  <div class="steps_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="steps_text"><b>Loan Application Steps</b></h2>
+          <p class="steps_description">Follow these simple steps to apply for our agricultural loan:</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="steps_container">
+            <div class="step_card">
+              <div class="step_number">1</div>
+              <div class="step_title">Check Eligibility</div>
+              <div class="step_description">Review our loan requirements and ensure you meet the criteria.</div>
+            </div>
+            <div class="step_card">
+              <div class="step_number">2</div>
+              <div class="step_title">Gather Documents</div>
+              <div class="step_description">Collect necessary documents, including ID, proof of income, and business
+                registration.</div>
+            </div>
+            <div class="step_card">
+              <div class="step_number">3</div>
+              <div class="step_title">Submit Application</div>
+              <div class="step_description">Fill out our online application form or visit our office.</div>
+            </div>
+            <div class="step_card">
+              <div class="step_number">4</div>
+              <div class="step_title">Review and Verification</div>
+              <div class="step_description">Our team will review your application and verify your documents.</div>
+            </div>
+            <div class="step_card">
+              <div class="step_number">5</div>
+              <div class="step_title">Loan Approval</div>
+              <div class="step_description">Receive notification of loan approval and sign the loan agreement.</div>
+            </div>
+            <div class="step_card">
+              <div class="step_number">6</div>
+              <div class="step_title">Disbursement</div>
+              <div class="step_description">Receive the loan amount in your account.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+      </div>
+    </div>
+  </div>
+  <!-- Loan Application Steps Section End -->
+  <!-- Loan Options Section Start -->
+  <div class="loan_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="loan_text"><b>Agricultural Loan Options</b></h2>
+          <p class="loan_description">We offer various loan options to support your agricultural endeavors.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="loan_card">
+            <h3 class="loan_title">Farm Input Loan</h3>
+            <p class="loan_details">Access funds for seeds, fertilizers, and equipment to enhance crop yields.</p>
+            <ul>
+              <li>Loan Amount: <span>₦50,000 - ₦500,000</span></li>
+              <li>Interest Rate: <span>10% - 15% per annum</span></li>
+              <li>Repayment Tenure: <span>6 - 12 months</span></li>
+            </ul>
+            <p class="sponsored_by">Sponsored by <img src="images/zenith bank.png" alt="Zenith Bank"></p>
+            <div class="apply_loan_bt"><a href="#" class="loan_button" data-toggle="modal"
+                data-target="#farmInputLoanModal">Apply Now</a></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="loan_card">
+            <h3 class="loan_title">Farm Expansion Loan</h3>
+            <p class="loan_details">Finance your farm expansion, including land acquisition and infrastructure
+              development.</p>
+            <ul>
+              <li>Loan Amount: <span>₦500,000 - ₦5,000,000</span></li>
+              <li>Interest Rate: <span>12% - 18% per annum</span></li>
+              <li>Repayment Tenure: <span>1 - 3 years</span></li>
+            </ul>
+            <p class="sponsored_by">Sponsored by <img src="images/ubaa.png" alt="UBA"></p>
+            <div class="apply_loan_bt"><a href="#" class="loan_button" data-toggle="modal"
+                data-target="#farmExpansionLoanModal">Apply Now</a></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="loan_card">
+            <h3 class="loan_title">Equipment Financing Loan</h3>
+            <p class="loan_details">Acquire tractors, irrigation systems, and other machinery to boost productivity.</p>
+            <ul>
+              <li>Loan Amount: <span>₦200,000 - ₦2,000,000</span></li>
+              <li>Interest Rate: <span>10% - 15% per annum</span></li>
+              <li>Repayment Tenure: <span>6 - 24 months</span></li>
+            </ul>
+            <p class="sponsored_by">Sponsored by <img src="images/firstbank.png" alt="First Bank"></p>
+            <div class="apply_loan_bt"><a href="#" class="loan_button" data-toggle="modal"
+                data-target="#equipmentFinancingLoanModal">Apply Now</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Loan Options Section End -->
+
+  <!-- Farm Input Loan Modal -->
+  <div class="modal fade" id="farmInputLoanModal" tabindex="-1" role="dialog" aria-labelledby="farmInputLoanModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="farmInputLoanModalLabel">Farm Input Loan Application</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="farm_name">Farm Name:</label>
+              <input type="text" class="form-control" id="farm_name" required>
+            </div>
+            <div class="form-group">
+              <label for="loan_amount">Loan Amount:</label>
+              <input type="number" class="form-control" id="loan_amount" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Information:</label>
+              <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Farm Expansion Loan Modal -->
+  <div class="modal fade" id="farmExpansionLoanModal" tabindex="-1" role="dialog"
+    aria-labelledby="farmExpansionLoanModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="farmExpansionLoanModalLabel">Farm Expansion Loan Application</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="farm_name">Farm Name:</label>
+              <input type="text" class="form-control" id="farm_name" required>
+            </div>
+            <div class="form-group">
+              <label for="loan_amount">Loan Amount:</label>
+              <input type="number" class="form-control" id="loan_amount" required>
+            </div>
+            <div class="form-group">
+              <label for="land_acquisition">Land Acquisition Details:</label>
+              <textarea class="form-control" id="land_acquisition" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="infrastructure_development">Infrastructure Development Details:</label>
+              <textarea class="form-control" id="infrastructure_development" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="expansion_plans">Expansion Plans:</label>
+              <textarea class="form-control" id="expansion_plans" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Equipment Financing Loan Modal -->
+  <div class="modal fade" id="equipmentFinancingLoanModal" tabindex="-1" role="dialog"
+    aria-labelledby="equipmentFinancingLoanModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="equipmentFinancingLoanModalLabel">Equipment Financing Loan Application</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="full_name">Full Name:</label>
+              <input type="text" class="form-control" id="full_name" required>
+            </div>
+            <div class="form-group">
+              <label for="farm_business_name">Farm/Business Name:</label>
+              <input type="text" class="form-control" id="farm_business_name" required>
+            </div>
+            <div class="form-group">
+              <label for="contact_number">Contact Number:</label>
+              <input type="tel" class="form-control" id="contact_number" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="loan_amount">Desired Loan Amount:</label>
+              <input type="number" class="form-control" id="loan_amount" required>
+            </div>
+            <div class="form-group">
+              <label for="equipment_brand_model">Equipment Brand and Model:</label>
+              <input type="text" class="form-control" id="equipment_brand_model" required>
+            </div>
+            <div class="form-group">
+              <label for="additional_info">Additional Information:</label>
+              <textarea class="form-control" id="additional_info" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer section start -->
+  <!-- info section -->
+  <div class="info_section layout_padding">
+    <div class="container ">
+      <div class="info_content">
+        <div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="d-flex">
+                <h5>
+                  About Agrico
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="">
+                      Our Story
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Our Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Meet Our Experts
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Careers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+                <ul class="ml-3 ml-md-5">
+                  <li>
+                    <a href="">
+                      Crop Management
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Soil Analysis
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Irrigation Systems
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Farm Equipment
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex">
+                <h5>
+                  Our Services
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="">
+                      Crop Protection
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Fertilizer Application
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Pest Control
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Soil Testing
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Consultation
+                    </a>
+                  </li>
+                </ul>
+                <ul class="ml-3 ml-md-5">
+                  <li>
+                    <a href="">
+                      Greenhouse Management
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Farm Automation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Agricultural Research
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Market Analysis
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex">
+                <h5>
+                  Resources
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="">
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      FAQs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Terms & Conditions
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Resource Library
+                    </a>
+                  </li>
+                </ul>
+                <ul class="ml-3 ml-md-5">
+                  <li>
+                    <a href="">
+                      Videos
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Infographics
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Webinars
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Messaging
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-baseline">
+          <div class="social-box">
+            <a href="">
+              <img src="images/fb-icon.png" alt="" />
+            </a>
+
+            <a href="">
+              <img src="images/twitter-icon.png" alt="" />
+            </a>
+            <a href="">
+              <img src="images/linkedin-icon.png" alt="" />
+            </a>
+            <a href="">
+              <img src="images/instagram-icon.png" alt="" />
+            </a>
+          </div>
+          <div class="form_container mt-5">
+            <form action="">
+              <label for="subscribeMail">
+                Newsletter
+              </label>
+              <input type="email" placeholder="Enter Your email" id="subscribeMail" />
+              <button type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end info section -->
+  <!-- footer section end -->
+  <!-- copyright section start -->
+  <div class="copyright_section">
+    <div class="container">
+      <p class="copyright">2024 Agrico. All Rights Reserved.</p>
+    </div>
+  </div>
+
+  <!-- copyright section end -->
+  <!-- Javascript files-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/plugin.js"></script>
+  <!-- sidebar -->
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/custom.js"></script>
+  <!-- javascript -->
+  <script src="js/owl.carousel.js"></script>
+  <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+
+</html>

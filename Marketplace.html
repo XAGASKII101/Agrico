@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>Agrico</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Responsive-->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- fevicon -->
+  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <!-- Tweaks for older IEs-->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- owl stylesheets -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+    media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header Section Start -->
+  <div class="header-section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="agricImg/Agrico_logo.jpeg" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Marketplace
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Marketplace.html">Explore</a>
+                <a class="dropdown-item" href="DVN.html">Drivers Verification Number</a>
+                <a class="dropdown-item" href="finance.html">Finance</a>
+                <a class="dropdown-item" href="farm-machinaries.html">Machineries</a>
+                <a class="dropdown-item" href="cart.html">Cart</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">E-Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Messenger.html">Messenger</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">
+                <i class="fa-solid fa-user fa-lg"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">
+                <i class="fa fa-shopping-cart" id="cart-icon"> <span id="cart-count">0</span></i>
+                <!-- </div> -->
+                <!-- <p id="cart-count" style="color: #000; font-weight: bold;">Cart (0)</p> -->
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Header Section End -->
+
+
+  <div class="farm_products_machineries_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 padding_top0">
+          <h4 class="about_text">Agricultural Marketplace</h4>
+          <h1 class="highest_text">Buy and Sell Agricultural Products and Services</h1>
+          <p class="lorem_text">Explore our wide range of agricultural products and services.</p>
+          <!-- <div class="read_main">
+            <div class="read_bt"><a href="#">Explore Now</a></div>
+          </div> -->
+        </div>
+        <!-- <div class="col-md-6">
+          <div class="image_4"><img src="images/tractor.jpg" alt="Tractor"></div>
+        </div> -->
+      </div>
+      <div class="row" style="margin-top: 50px;">
+        <div class="col-md-12">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="machineries-tab" data-toggle="tab" href="#machineries" role="tab"
+                aria-controls="machineries" aria-selected="true">Machineries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="crops-tab" data-toggle="tab" href="#crops" role="tab" aria-controls="crops"
+                aria-selected="false">Crops</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="livestocks-tab" data-toggle="tab" href="#livestocks" role="tab"
+                aria-controls="livestocks" aria-selected="false">Livestocks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="seeds-tab" data-toggle="tab" href="#seeds" role="tab" aria-controls="seeds"
+                aria-selected="false">Seeds</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="fertilizers-tab" data-toggle="tab" href="#fertilizers" role="tab"
+                aria-controls="fertilizers" aria-selected="false">Fertilizers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pesticides-tab" data-toggle="tab" href="#pesticides" role="tab"
+                aria-controls="pesticides" aria-selected="false">Pesticides</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="irrigation-systems-tab" data-toggle="tab" href="#irrigation-systems" role="tab"
+                aria-controls="irrigation-systems" aria-selected="false">Irrigation Systems</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="agri-toolkit-tab" data-toggle="tab" href="#agri-toolkit" role="tab"
+                aria-controls="agri-toolkit" aria-selected="false">Agri-ToolKit</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <!-- Machineries Tab -->
+            <div class="tab-pane fade show active" id="machineries" role="tabpanel" aria-labelledby="machineries-tab">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/tractor.jpg" alt="Tractor">
+                    <h4>Tractor</h4>
+                    <p>Location: Lagos</p>
+                    <p>Condition: New</p>
+                    <button class="buy_bt" data-product="Tractor" data-price="" data-location="Lagos"
+                      data-condition="New">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/harvester.jpg" alt="Harvester">
+                    <h4>Harvester</h4>
+                    <p>Location: Abuja</p>
+                    <p>Condition: Used</p>
+                    <p>₦1,500,000</p>
+                    <button class="buy_bt" data-product="Harvester" data-price="1500000" data-location="Abuja"
+                      data-condition="Used">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <!-- ... other machineries products ... -->
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/hedge-trimmer.jpg" alt="Hedge Trimmer">
+                    <h4>Hedge Trimmer</h4>
+                    <p>Location: Ibadan</p>
+                    <p>Condition: New</p>
+                    <button class="buy_bt" data-product="Hedge Trimmer" data-price="" data-location="Ibadan"
+                    data-condition="New" onclick="window.location.href='https://paystack.com/pay/24y3fj8722'">
+                    Buy Now
+                  </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Crops Tab -->
+            <div class="tab-pane fade" id="crops" role="tabpanel" aria-labelledby="crops-tab">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/maize.jpg" alt="Maize">
+                    <h4>Maize</h4>
+                    <p>Location: Kano</p>
+                    <p>Quantity: 500kg</p>
+                    <p>₦80,000</p>
+                    <button class="buy_bt" data-product="Maize" data-price="80000" data-location="Kano"
+                      data-quantity="500kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/rice.jpg" alt="Rice">
+                    <h4>Rice</h4>
+                    <p>Location: Abuja</p>
+                    <p>Quantity: 1000kg</p>
+                    <p>₦150,000</p>
+                    <button class="buy_bt" data-product="Rice" data-price="150000" data-location="Abuja"
+                      data-quantity="1000kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <!-- ... other crops products ... -->
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/soybeans.jpg" alt="Soybeans">
+                    <h4>Soybeans</h4>
+                    <p>Location: Abuja</p>
+                    <p>Quantity: 1500kg</p>
+                    <p>₦300,000</p>
+                    <button class="buy_bt" data-product="Soybeans" data-price="300000" data-location="Abuja"
+                      data-quantity="1500kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/corn.jpg" alt="Corn">
+                    <h4>Corn</h4>
+                    <p>Location: Kano</p>
+                    <p>Quantity: 2000kg</p>
+                    <p>₦350,000</p>
+                    <button class="buy_bt" data-product="Corn" data-price="350000" data-location="Kano"
+                      data-quantity="2000kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/pumpkin.jpg" alt="Pumpkin">
+                    <h4>Pumpkin</h4>
+                    <p>Location: Ibadan</p>
+                    <p>Quantity: 500kg</p>
+                    <p>₦120,000</p>
+                    <button class="buy_bt" data-product="Pumpkin" data-price="120000" data-location="Ibadan"
+                      data-quantity="500kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/sunflower.jpg" alt="Sunflower">
+                    <h4>Sunflower</h4>
+                    <p>Location: Lagos</p>
+                    <p>Quantity: 1000kg</p>
+                    <p>₦250,000</p>
+                    <button class="buy_bt" data-product="Sunflower" data-price="250000" data-location="Lagos"
+                      data-quantity="1000kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/groundnuts.jpg" alt="Groundnuts">
+                    <h4>Groundnuts</h4>
+                    <p>Location: Abuja</p>
+                    <p>Quantity: 1500kg</p>
+                    <p>₦300,000</p>
+                    <button class="buy_bt" data-product="Groundnuts" data-price="300000" data-location="Abuja"
+                      data-quantity="1500kg">
+                      Buy Now
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/beans.jpg" alt="Beans">
+                    <h4>Beans</h4>
+                    <p>Location: Kano</p>
+                    <p>Quantity: 2000kg</p>
+                    <p>₦400,000</p>
+                    <button class="buy_bt" data-product="Beans" data-price="400000" data-location="Kano"
+                      data-quantity="2000kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/cucumbers.jpg" alt="Cucumbers">
+                    <h4>Cucumbers</h4>
+                    <p>Location: Ibadan</p>
+                    <p>Quantity: 1000kg</p>
+                    <p>₦200,000</p>
+                    <button class="buy_bt" data-product="Cucumbers" data-price="200000" data-location="Ibadan"
+                      data-quantity="1000kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/carrots.jpg" alt="Carrots">
+                    <h4>Carrots</h4>
+                    <p>Location: Lagos</p>
+                    <p>Quantity: 500kg</p>
+                    <p>₦150,000</p>
+                    <button class="buy_bt" data-product="Carrots" data-price="150000" data-location="Lagos"
+                      data-quantity="500kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/onions.jpg" alt="Onions">
+                    <h4>Onions</h4>
+                    <p>Location: Abuja</p>
+                    <p>Quantity: 1000kg</p>
+                    <p>₦250,000</p>
+                    <button class="buy_bt" data-product="Onions" data-price="250000" data-location="Abuja"
+                      data-quantity="1000kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/peppers.jpg" alt="Peppers">
+                    <h4>Peppers</h4>
+                    <p>Location: Kano</p>
+                    <p>Quantity: 500kg</p>
+                    <p>₦120,000</p>
+                    <button class="buy_bt" data-product="Peppers" data-price="120000" data-location="Kano"
+                      data-quantity="500kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/tomatoes.jpg" alt="Tomatoes">
+                    <h4>Tomatoes</h4>
+                    <p>Location: Ibadan</p>
+                    <p>Quantity: 1000kg</p>
+                    <p>₦200,000</p>
+                    <button class="buy_bt" data-product="Tomatoes" data-price="200000" data-location="Ibadan"
+                      data-quantity="1000kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/potatoes.jpg" alt="Potatoes">
+                    <h4>Potatoes</h4>
+                    <p>Location: Lagos</p>
+                    <p>Quantity: 1500kg</p>
+                    <p>₦280,000</p>
+                    <button class="buy_bt" data-product="Potatoes" data-price="280000" data-location="Lagos"
+                      data-quantity="1500kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/cassava.jpg" alt="Cassava">
+                    <h4>Cassava</h4>
+                    <p>Location: Abuja</p>
+                    <p>Quantity: 2000kg</p>
+                    <p>₦350,000</p>
+                    <button class="buy_bt" data-product="Cassava" data-price="350000" data-location="Abuja"
+                      data-quantity="2000kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/millet.jpg" alt="Millet">
+                    <h4>Millet</h4>
+                    <p>Location: Kano</p>
+                    <p>Quantity: 1000kg</p>
+                    <p>₦180,000</p>
+                    <button class="buy_bt" data-product="Millet" data-price="180000" data-location="Kano"
+                      data-quantity="1000kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/sorghum.jpg" alt="Sorghum">
+                    <h4>Sorghum</h4>
+                    <p>Location: Ibadan</p>
+                    <p>Quantity: 1500kg</p>
+                    <p>₦250,000</p>
+                    <button class="buy_bt" data-product="Sorghum" data-price="250000" data-location="Ibadan"
+                      data-quantity="1500kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/wheat.jpg" alt="Wheat">
+                    <h4>Wheat</h4>
+                    <p>Location: Lagos</p>
+                    <p>Quantity: 2000kg</p>
+                    <p>₦300,000</p>
+                    <button class="buy_bt" data-product="Wheat" data-price="300000" data-location="Lagos"
+                      data-quantity="2000kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Livestocks Tab -->
+            <!-- Livestocks Tab -->
+            <div class="tab-pane fade" id="livestocks" role="tabpanel" aria-labelledby="livestocks-tab">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/cattle.jpg" alt="Cattle">
+                    <h4>Cattle</h4>
+                    <p>Location: Kano</p>
+                    <p>Quantity: 10 heads</p>
+                    <p>₦500,000/head</p>
+                    <button class="buy_bt" data-product="Cattle" data-price="500000" data-location="Kano"
+                      data-quantity="10 heads">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/sheep.jpg" alt="Sheep">
+                    <h4>Sheep</h4>
+                    <p>Location: Abuja</p>
+                    <p>Quantity: 20 heads</p>
+                    <p>₦80,000/head</p>
+                    <button class="buy_bt" data-product="Sheep" data-price="80000" data-location="Abuja"
+                      data-quantity="20 heads">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <!-- ... other livestock products ... -->
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/ducklings.jpg" alt="Ducklings">
+                    <h4>Ducklings</h4>
+                    <p>Location: Kano</p>
+                    <p>Quantity: 100 heads</p>
+                    <p>₦5,000/head</p>
+                    <button class="buy_bt" data-product="Ducklings" data-price="5000" data-location="Kano"
+                      data-quantity="100 heads">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/chicks.jpg" alt="Chicks">
+                    <h4>Chicks</h4>
+                    <p>Location: Abuja</p>
+                    <p>Quantity: 500 heads</p>
+                    <p>₦2,000/head</p>
+                    <button class="buy_bt" data-product="Chicks" data-price="2000" data-location="Abuja"
+                      data-quantity="500 heads">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/turkeys.jpg" alt="Turkeys">
+                    <h4>Turkeys</h4>
+                    <p>Location: Kano</p>
+                    <p>Quantity: 50 heads</p>
+                    <p>₦10,000/head</p>
+                    <button class="buy_bt" data-product="Turkeys" data-price="10000" data-location="Kano"
+                      data-quantity="50 heads">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/ducks.jpg" alt="Ducks">
+                    <h4>Ducks</h4>
+                    <p>Location: Abuja</p>
+                    <p>Quantity: 20 heads</p>
+                    <p>₦8,000/head</p>
+                    <button class="buy_bt" data-product="Ducks" data-price="8000" data-location="Abuja"
+                      data-quantity="20 heads">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/pigs.jpg" alt="Pigs">
+                    <h4>Pigs</h4>
+                    <p>Location: Ibadan</p>
+                    <p>Quantity: 5 heads</p>
+                    <p>₦30,000/head</p>
+                    <button class="buy_bt" data-product="Pigs" data-price="30000" data-location="Ibadan"
+                      data-quantity="5 heads">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/horses.jpg" alt="Horses">
+                    <h4>Horses</h4>
+                    <p>Location: Kano</p>
+                    <p>Quantity: 2 heads</p>
+                    <p>₦200,000/head</p>
+                    <button class="buy_bt" data-product="Horses" data-price="200000" data-location="Kano"
+                      data-quantity="2 heads">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/donkeys.jpg" alt="Donkeys">
+                    <h4>Donkeys</h4>
+                    <p>Location: Abuja</p>
+                    <p>Quantity: 5 heads</p>
+                    <p>₦50,000/head</p>
+                    <button class="buy_bt" data-product="Donkeys" data-price="50000" data-location="Abuja"
+                      data-quantity="5 heads">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/mules.jpg" alt="Mules">
+                    <h4>Mules</h4>
+                    <p>Location: Lagos</p>
+                    <p>Quantity: 3 heads</p>
+                    <p>₦100,000/head</p>
+                    <button class="buy_bt" data-product="Mules" data-price="100000" data-location="Lagos"
+                      data-quantity="3 heads">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/rabbits.jpg" alt="Rabbits">
+                    <h4>Rabbits</h4>
+                    <p>Location: Ibadan</p>
+                    <p>Quantity: 20 heads</p>
+                    <p>₦5,000/head</p>
+                    <button class="buy_bt" data-product="Rabbits" data-price="5000" data-location="Ibadan"
+                      data-quantity="20 heads">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/bees.jpg" alt="Bees">
+                    <h4>Bees</h4>
+                    <p>Location: Kano</p>
+                    <p>Quantity: 10 hives</p>
+                    <p>₦20,000/hive</p>
+                    <button class="buy_bt" data-product="Bees" data-price="20000" data-location="Kano"
+                      data-quantity="10 hives">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/fish.jpg" alt="Fish">
+                    <h4>Fish</h4>
+                    <p>Location: Abuja</p>
+                    <p>Quantity: 1000 kg</p>
+                    <p>₦500/kg</p>
+                    <button class="buy_bt" data-product="Fish" data-price="500" data-location="Abuja"
+                      data-quantity="1000 kg">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/geese.jpg" alt="Geese">
+                    <h4>Geese</h4>
+                    <p>Location: Lagos</p>
+                    <p>Quantity: 10 heads</p>
+                    <p>₦15,000/head</p>
+                    <button class="buy_bt" data-product="Geese" data-price="15000" data-location="Lagos"
+                      data-quantity="10 heads">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <!-- Seeds Tab -->
+                <div class="tab-pane fade" id="seeds" role="tabpanel" aria-labelledby="seeds-tab">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="product_box">
+                        <img src="images/maize-seeds.jpg" alt="Maize Seeds">
+                        <h4>Maize Seeds</h4>
+                        <p>Location: Ibadan</p>
+                        <p>Quantity: 50kg</p>
+                        <p>₦15,000</p>
+                        <button class="buy_bt" data-product="Maize Seeds" data-price="15000" data-location="Ibadan"
+                          data-quantity="50kg">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="product_box">
+                        <img src="images/rice-seeds.jpg" alt="Rice Seeds">
+                        <h4>Rice Seeds</h4>
+                        <p>Location: Kano</p>
+                        <p>Quantity: 100kg</p>
+                        <p>₦25,000</p>
+                        <button class="buy_bt" data-product="Rice Seeds" data-price="25000" data-location="Kano"
+                          data-quantity="100kg">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+                    <!-- ... other seeds ... -->
+                    <div class="col-md-3">
+                      <div class="product_box">
+                        <img src="images/okra-seeds.jpg" alt="Okra Seeds">
+                        <h4>Okra Seeds</h4>
+                        <p>Location: Ibadan</p>
+                        <p>Quantity: 20kg</p>
+                        <p>₦5,000</p>
+                        <button class="buy_bt" data-product="Okra Seeds" data-price="5000" data-location="Ibadan"
+                          data-quantity="20kg">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="product_box">
+                        <img src="images/eggplant-seeds.jpg" alt="Eggplant Seeds">
+                        <h4>Eggplant Seeds</h4>
+                        <p>Location: Kano</p>
+                        <p>Quantity: 10kg</p>
+                        <p>₦3,000</p>
+                        <button class="buy_bt" data-product="Eggplant Seeds" data-price="3000" data-location="Kano"
+                          data-quantity="10kg">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="product_box">
+                        <img src="images/broccoli-seeds.jpg" alt="Broccoli Seeds">
+                        <h4>Broccoli Seeds</h4>
+                        <p>Location: Lagos</p>
+                        <p>Quantity: 5kg</p>
+                        <p>₦2,500</p>
+                        <button class="buy_bt" data-product="Broccoli Seeds" data-price="2500" data-location="Lagos"
+                          data-quantity="5kg">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="product_box">
+                        <img src="images/cauliflower-seeds.jpg" alt="Cauliflower Seeds">
+                        <h4>Cauliflower Seeds</h4>
+                        <p>Location: Abuja</p>
+                        <p>Quantity: 10kg</p>
+                        <p>₦4,000</p>
+                        <button class="buy_bt" data-product="Cauliflower Seeds" data-price="4000" data-location="Abuja"
+                          data-quantity="10kg">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="product_box">
+                        <img src="images/kale-seeds.jpg" alt="Kale Seeds">
+                        <h4>Kale Seeds</h4>
+                        <p>Location: Ibadan</p>
+                        <p>Quantity: 5kg</p>
+                        <p>₦2,000</p>
+                        <button class="buy_bt" data-product="Kale Seeds" data-price="2000" data-location="Ibadan"
+                          data-quantity="5kg">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="product_box">
+                        <img src="images/spinach-seeds.jpg" alt="Spinach Seeds">
+                        <h4>Spinach Seeds</h4>
+                        <p>Location: Kano</p>
+                        <p>Quantity: 10kg</p>
+                        <p>₦3,500</p>
+                        <button class="buy_bt" data-product="Spinach Seeds" data-price="3500" data-location="Kano"
+                          data-quantity="10kg">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="product_box">
+                        <img src="images/cabbage-seeds.jpg" alt="Cabbage Seeds">
+                        <h4>Cabbage Seeds</h4>
+                        <p>Location: Lagos</p>
+                        <p>Quantity: 20kg</p>
+                        <p>₦6,000</p>
+                        <button class="buy_bt" data-product="Cabbage Seeds" data-price="6000" data-location="Lagos"
+                          data-quantity="20kg">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="product_box">
+                        <img src="images/sunflower-seeds.jpg" alt="Sunflower Seeds">
+                        <h4>Sunflower Seeds</h4>
+                        <p>Location: Lagos</p>
+                        <p>Quantity: 20kg</p>
+                        <p>₦6,000</p>
+                        <button class="buy_bt" data-product="Sunflower Seeds" data-price="6000" data-location="Lagos"
+                          data-quantity="20kg">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="product_box">
+                        <img src="images/pumpkin-seeds.jpg" alt="Pumpkin Seeds">
+                        <h4>Pumpkin Seeds</h4>
+                        <p>Location: Abuja</p>
+                        <p>Quantity: 10kg</p>
+                        <p>₦3,000</p>
+                        <button class="buy_bt" data-product="Pumpkin Seeds" data-price="3000" data-location="Abuja"
+                          data-quantity="10kg">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+                    <!-- ... other seeds ... -->
+                  </div>
+                </div>
+
+                <!-- Fertilizers Tab -->
+                <div class="tab-pane fade" id="fertilizers" role="tabpanel" aria-labelledby="fertilizers-tab">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="product_box">
+                        <img src="images/urea-fertilizer.jpg" alt="Urea Fertilizer">
+                        <h4>Urea Fertilizer</h4>
+                        <p>Location: Lagos</p>
+                        <p>Quantity: 50kg</p>
+                        <p>₦15,000</p>
+                        <button class="buy_bt" data-product="Urea Fertilizer" data-price="15000" data-location="Lagos"
+                          data-quantity="50kg">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="product_box">
+                        <img src="images/npk-fertilizer.jpg" alt="NPK Fertilizer">
+                        <h4>NPK Fertilizer</h4>
+                        <p>Location: Kano</p>
+                        <p>Quantity: 100kg</p>
+                        <p>₦25,000</p>
+                        <button class="buy_bt" data-product="NPK Fertilizer" data-price="25000" data-location="Kano"
+                          data-quantity="100kg">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+                    <!-- ... other fertilizers ... -->
+                    <div class="col-md-3">
+                      <div class="product_box">
+                        <img src="images/algae-fertilizer.jpg" alt="Algae Fertilizer">
+                        <h4>Algae Fertilizer</h4>
+                        <p>Location: Abuja</p>
+                        <p>Quantity: 100kg</p>
+                        <p>₦30,000</p>
+                        <button class="buy_bt" data-product="Algae Fertilizer" data-price="30000" data-location="Abuja"
+                          data-quantity="100kg">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="product_box">
+                        <img src="images/humic-acid-fertilizer.jpg" alt="Humic Acid Fertilizer">
+                        <h4>Humic Acid Fertilizer</h4>
+                        <p>Location: Ibadan</p>
+                        <p>Quantity: 50kg</p>
+                        <p>₦25,000</p>
+                        <button class="buy_bt" data-product="Humic Acid Fertilizer" data-price="25000"
+                          data-location="Ibadan" data-quantity="50kg">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="product_box">
+                        <img src="images/ammonium-chloride.jpg" alt="Ammonium Chloride">
+                        <h4>Ammonium Chloride</h4>
+                        <p>Location: Ibadan</p>
+                        <p>Quantity: 100kg</p>
+                        <p>₦20,000</p>
+                        <button class="buy_bt" data-product="Ammonium Chloride" data-price="20000"
+                          data-location="Ibadan" data-quantity="100kg">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="product_box">
+                        <img src="images/calcium-nitrate.jpg" alt="Calcium Nitrate">
+                        <h4>Calcium Nitrate</h4>
+                        <p>Location: Lagos</p>
+                        <p>Quantity: 50kg</p>
+                        <p>₦25,000</p>
+                        <button class="buy_bt" data-product="Calcium Nitrate" data-price="25000" data-location="Lagos"
+                          data-quantity="50kg">
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
+                    <!-- ... other fertilizers ... -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Pesticides Tab -->
+            <div class="tab-pane fade" id="pesticides" role="tabpanel" aria-labelledby="pesticides-tab">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/insecticide-pesticide.jpg" alt="Insecticide Pesticide">
+                    <h4>Insecticide Pesticide</h4>
+                    <p>Location: Ibadan</p>
+                    <p>Quantity: 200 liters</p>
+                    <p>₦50,000</p>
+                    <button class="buy_bt" data-product="Insecticide Pesticide" data-price="50000"
+                      data-location="Ibadan" data-quantity="200 liters">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/fungicide-pesticide.jpg" alt="Fungicide Pesticide">
+                    <h4>Fungicide Pesticide</h4>
+                    <p>Location: Kano</p>
+                    <p>Quantity: 500 liters</p>
+                    <p>₦120,000</p>
+                    <button class="buy_bt" data-product="Fungicide Pesticide" data-price="120000" data-location="Kano"
+                      data-quantity="500 liters">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/herbicide-pesticide.jpg" alt="Herbicide Pesticide">
+                    <h4>Herbicide Pesticide</h4>
+                    <p>Location: Lagos</p>
+                    <p>Quantity: 300 liters</p>
+                    <p>₦90,000</p>
+                    <button class="buy_bt" data-product="Herbicide Pesticide" data-price="90000" data-location="Lagos"
+                      data-quantity="300 liters">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/rodenticide-pesticide.jpg" alt="Rodenticide Pesticide">
+                    <h4>Rodenticide Pesticide</h4>
+                    <p>Location: Abuja</p>
+                    <p>Quantity: 100 liters</p>
+                    <p>₦30,000</p>
+                    <button class="buy_bt" data-product="Rodenticide Pesticide" data-price="30000" data-location="Abuja"
+                      data-quantity="100 liters">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/miticide-pesticide.jpg" alt="Miticide Pesticide">
+                    <h4>Miticide Pesticide</h4>
+                    <p>Location: Port Harcourt</p>
+                    <p>Quantity: 250 liters</p>
+                    <p>₦60,000</p>
+                    <button class="buy_bt" data-product="Miticide Pesticide" data-price="60000"
+                      data-location="Port Harcourt" data-quantity="250 liters">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/nematicide-pesticide.jpg" alt="Nematicide Pesticide">
+                    <h4>Nematicide Pesticide</h4>
+                    <p>Location: Benin</p>
+                    <p>Quantity: 400 liters</p>
+                    <p>₦100,000</p>
+                    <button class="buy_bt" data-product="Nematicide Pesticide" data-price="100000" data-location="Benin"
+                      data-quantity="400 liters">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Irrigation Systems Tab -->
+            <div class="tab-pane fade" id="irrigation-systems" role="tabpanel" aria-labelledby="irrigation-systems-tab">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/drip-irrigation-system.jpg" alt="Drip Irrigation System">
+                    <h4>Drip Irrigation System</h4>
+                    <p>Location: Lagos</p>
+                    <p>Quantity: 1000 meters</p>
+                    <button class="buy_bt"><a href="#">Buy Now</a></button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/sprinkler-irrigation-system.jpg" alt="Sprinkler Irrigation System">
+                    <h4>Sprinkler Irrigation System</h4>
+                    <p>Location: Abuja</p>
+                    <p>Quantity: 500 meters</p>
+                    <button class="buy_bt"><a href="#">Buy Now</a></button>
+                  </div>
+                </div>
+                <!-- ... other irrigation systems ... -->
+              </div>
+            </div>
+            <!-- Agri-ToolKit Tab -->
+            <div class="tab-pane fade" id="agri-toolkit" role="tabpanel" aria-labelledby="agri-toolkit-tab">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/robotic-sprinkler.jpg" alt="Robotic Sprinkler">
+                    <h4>Robotic Sprinkler</h4>
+                    <p>Location: Ibadan</p>
+                    <p>Quantity: 10 units</p>
+                    <p>₦500,000</p>
+                    <button class="buy_bt" data-product="Robotic Sprinkler" data-price="500000" data-location="Ibadan"
+                      data-quantity="10 units">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/smart-tractor.jpg" alt="Smart Tractor">
+                    <h4>Smart Tractor</h4>
+                    <p>Location: Kano</p>
+                    <p>Quantity: 5 units</p>
+                    <p>₦2,000,000</p>
+                    <button class="buy_bt" data-product="Smart Tractor" data-price="2000000" data-location="Kano"
+                      data-quantity="5 units">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/automated-farming-system.jpg" alt="Automated Farming System">
+                    <h4>Automated Farming System</h4>
+                    <p>Location: Lagos</p>
+                    <p>Quantity: 2 units</p>
+                    <p>₦1,500,000</p>
+                    <button class="buy_bt" data-product="Automated Farming System" data-price="1500000"
+                      data-location="Lagos" data-quantity="2 units">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="product_box">
+                    <img src="images/smart-greenhouse.jpg" alt="Smart Greenhouse">
+                    <h4>Smart Greenhouse</h4>
+                    <p>Location: Abuja</p>
+                    <p>Quantity: 10 units</p>
+                    <p>₦800,000</p>
+                    <button class="buy_bt" data-product="Smart Greenhouse" data-price="800000" data-location="Abuja"
+                      data-quantity="10 units">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ... other Agri-ToolKit products ... -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <script>
+    // Get the cart icon and count elements
+    const cartIcon = document.getElementById('cart-icon');
+    const cartCount = document.getElementById('cart-count');
+
+    // Initialize cart data
+    let cart = [];
+
+    // Function to update cart count
+    function updateCartCount() {
+      cartCount.textContent = cart.length;
+    }
+
+    // Function to add product to cart
+    function addProductToCart(product) {
+      cart.push(product);
+      updateCartCount();
+      // Save cart to local storage
+      localStorage.setItem('cart', JSON.stringify(cart));
+    }
+
+    // Add event listeners to buy buttons
+    document.querySelectorAll('.buy_bt').forEach(button => {
+      button.addEventListener('click', event => {
+        const product = {
+          name: button.getAttribute('data-product'),
+          price: button.getAttribute('data-price'),
+          location: button.getAttribute('data-location'),
+          condition: button.getAttribute('data-condition')
+        };
+        addProductToCart(product);
+      });
+    });
+    // Add event listeners to buy buttons
+    document.querySelectorAll('.buy_bt').forEach(button => {
+      button.addEventListener('click', event => {
+        const product = {
+          name: button.getAttribute('data-product'),
+          price: button.getAttribute('data-price'),
+          location: button.getAttribute('data-location'),
+          quantity: button.getAttribute('data-quantity')
+        };
+        addProductToCart(product);
+      });
+    });
+    // Function to add product to cart
+    function addProductToCart(product) {
+      cart.push({
+        name: product.name,
+        price: product.price,
+        location: product.location,
+        quantity: product.quantity,
+        total: product.price * 1 // Calculate total price
+      });
+      updateCartCount();
+      // Save cart to local storage
+      localStorage.setItem('cart', JSON.stringify(cart));
+    }
+  </script>
+  <!-- JavaScript -->
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#tractorModal").on("click", function () {
+        $("#tractorModal").modal("show");
+      });
+
+      $("#harvesterModal").on("click", function () {
+        $("#harvesterModal").modal("show");
+      });
+    });
+  </script>
+  <!-- footer section start -->
+  <!-- info section -->
+  <div class="info_section layout_padding">
+    <div class="container ">
+      <div class="info_content">
+        <div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="d-flex">
+                <h5>
+                  About Agrico
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="">
+                      Our Story
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Our Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Meet Our Experts
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Careers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+                <ul class="ml-3 ml-md-5">
+                  <li>
+                    <a href="">
+                      Crop Management
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Soil Analysis
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Irrigation Systems
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Farm Equipment
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex">
+                <h5>
+                  Our Services
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="">
+                      Crop Protection
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Fertilizer Application
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Pest Control
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Soil Testing
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Consultation
+                    </a>
+                  </li>
+                </ul>
+                <ul class="ml-3 ml-md-5">
+                  <li>
+                    <a href="">
+                      Greenhouse Management
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Farm Automation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Agricultural Research
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Market Analysis
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex">
+                <h5>
+                  Resources
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="">
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      FAQs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Terms & Conditions
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Resource Library
+                    </a>
+                  </li>
+                </ul>
+                <ul class="ml-3 ml-md-5">
+                  <li>
+                    <a href="">
+                      Videos
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Infographics
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Webinars
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Messaging
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-baseline">
+          <div class="social-box">
+            <a href="">
+              <img src="images/fb-icon.png" alt="" />
+            </a>
+
+            <a href="">
+              <img src="images/twitter-icon.png" alt="" />
+            </a>
+            <a href="">
+              <img src="images/linkedin-icon.png" alt="" />
+            </a>
+            <a href="">
+              <img src="images/instagram-icon.png" alt="" />
+            </a>
+          </div>
+          <div class="form_container mt-5">
+            <form action="">
+              <label for="subscribeMail">
+                Newsletter
+              </label>
+              <input type="email" placeholder="Enter Your email" id="subscribeMail" />
+              <button type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end info section -->
+  <!-- footer section end -->
+  <!-- copyright section start -->
+  <div class="copyright_section">
+    <div class="container">
+      <p class="copyright">2024 Agrico. All Rights Reserved.</p>
+    </div>
+  </div>
+  <!-- copyright section end -->
+  <!-- Javascript files-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/plugin.js"></script>
+  <!-- sidebar -->
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/custom.js"></script>
+  <!-- javascript -->
+  <script src="js/owl.carousel.js"></script>
+  <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+
+</html>

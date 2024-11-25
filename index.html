@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>Agrico</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Responsive-->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- fevicon -->
+  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <!-- Tweaks for older IEs-->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- owl stylesheets -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+    media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header Section Start -->
+  <div class="header-section">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="agricImg/Agrico_logo.jpeg" alt="Logo">
+        </a>
+        <br/>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Marketplace
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Marketplace.html">Explore</a>
+                <a class="dropdown-item" href="DVN.html">Drivers Verification Number</a>
+                <a class="dropdown-item" href="finance.html">Finance</a>
+                <a class="dropdown-item" href="farm-machinaries.html">Machineries</a>
+                <a class="dropdown-item" href="cart.html">Cart</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">E-Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Messenger.html">Messenger</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">
+                <i class="fa-solid fa-user fa-lg"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">
+                <i class="fa fa-shopping-cart" id="cart-icon"> <span id="cart-count">0</span></i>
+                <!-- </div> -->
+                <!-- <p id="cart-count" style="color: #000; font-weight: bold;">Cart (0)</p> -->
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Banner Section Start -->
+  <div id="Head">
+      <div class="Head_container">
+        
+        <p class="text-1" >
+          AGRICO <br/><span>Our Love for Agriculture brings us together!</span>
+          
+        </p>
+        <p  class="text-2">25% Off On All Products</p>
+        <button id="shop_now">EXPLORE</button>
+        <button id="find_more"> FIND MORE </button>
+      </div>
+    </div>
+
+  <style>
+    .agrico_highest_text {
+      color: green;
+    }
+
+    .agrico_lorem_text {
+      color: black;
+    }
+
+    .agrico_banner_section {
+      background-color: #f7f7f7;
+      padding: 0;
+      height: 50rem;
+    }
+
+    .carousel-inner {
+      border-radius: 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      height: 50rem;
+    }
+
+    .carousel-item {
+      height: 700px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(100%);
+    }
+
+    .carousel-caption {
+      bottom: 20%;
+      left: 15%;
+      right: 15%;
+      padding-bottom: 1rem;
+      color: #fff;
+      text-align: center;
+    }
+
+    .carousel-caption h1 {
+      font-size: 48px;
+      font-weight: 800;
+    }
+
+    .carousel-caption p {
+      font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-item {
+        height: 400px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .carousel-item {
+        height: 300px;
+      }
+
+      .carousel-caption {
+        bottom: 10%;
+        left: 10%;
+        right: 10%;
+        padding-bottom: 0.5rem;
+      }
+
+      .carousel-caption h1 {
+        font-size: 24px;
+      }
+
+      .carousel-caption p {
+        font-size: 14px;
+      }
+    }
+  </style>
+  <style>
+    /* Responsive styles */
+
+    @media (max-width: 1200px) {
+      .weather_image img {
+        height: 250px;
+      }
+
+      .weather_info {
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .weather_section {
+        padding: 30px 0;
+      }
+
+      .weather_image img {
+        height: 200px;
+      }
+
+      .weather_info {
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .weather_image img {
+        height: 150px;
+      }
+
+      .weather_info {
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .weather_section {
+        padding: 20px 0;
+      }
+
+      .weather_image img {
+        height: 100px;
+      }
+
+      .weather_info {
+        padding: 5px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .weather_image img {
+        height: 80px;
+      }
+
+      .weather_info {
+        padding: 0;
+      }
+    }
+  </style>
+
+<div class="abstract">
+  <!-- <a href="your_pdf_file.pdf" download="your_desired_filename.pdf">Download Our PDF</a> -->
+<a
+                      href="pdf\DOC-20241123-WA0004_"
+                      download="ABSTRACT FOR AGRICO"
+                    >
+                    <button>ABSTRACT </button>
+
+                    </a>
+<a
+                      href="/pdf\DOC-20241122-WA0008_"
+                      download="ABSTRACT FOR AGRICO"
+                    >
+                  <button>PROPOSAL </button>
+                  </a>
+                  
+  </div>
+
+
+  <!-- Weather Forecast Section Start -->
+  <div class="weather_section layout_padding" style="background-color: #f7f7f7; padding: 50px 0;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="weather_image">
+            <img src="https://www.researchnester.com/our_blog/images/blog-img/agriculture-robots-market-banner.webp"
+              alt="Agricultural Weather Image"
+              style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="weather_info">
+            <h2 class="forecast_text">Accurate Agricultural Weather Forecasts</h2>
+            <h1 class="weather_text">Informed Farming Decisions for Optimal Yields</h1>
+            <p class="weather_description">Stay ahead of the seasons with reliable weather forecasts. Enhance planting,
+              harvesting, and crop management strategies for maximum productivity.</p>
+            <div id="weather-widget">
+              <h2>Current Weather</h2>
+              <p id="current-weather"></p>
+            </div>
+            <p class="weather_tip">Plan your farming schedule with confidence using our accurate weather forecasts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Weather Forecast Section End -->
+
+  <script>
+    (function (d, s, id) {
+      if (d.getElementById(id)) {
+        if (window.__TOMORROW__) {
+          window.__TOMORROW__.renderWidget();
+        }
+        return;
+      }
+      const fjs = d.getElementsByTagName(s)[0];
+      const js = d.createElement(s);
+      js.id = id;
+      js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, 'script', 'tomorrow-sdk');
+  </script>
+
+  <div class="tomorrow" data-location-id="076785,077068,077044,076781,076759,076920" data-language="EN"
+    data-unit-system="METRIC" data-skin="dark" data-widget-type="current6"
+    style="padding-bottom:22px;position:relative;">
+    <a href="https://www.tomorrow.io/weather-api/" rel="nofollow noopener noreferrer" target="_blank"
+      style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+      <img alt="Powered by the Tomorrow.io Weather API"
+        src="https://weather-website-client.tomorrow.io/img/powered-by.svg" width="250" height="18" />
+    </a>
+  </div>
+  <script>
+    const apiKey = 'ae01fa904e5d7470275df58a9ec751a9';
+    const latitude = '40.7831';
+    const longitude = '-73.9712';
+    const url = `https://api.weatherstack.com/current?access_key=${apiKey}&query=${latitude},${longitude}`;
+
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('current-weather').innerHTML = `
+          <p style="color: green">Temperature: ${data.current.temperature}°C</p>
+          <p style="color: green">Humidity: ${data.current.humidity}%</p>
+          <p style="color: green">Wind Speed: ${data.current.wind_speed} km/h</p>
+          <p style="color: green">Weather Condition: ${data.current.weather_descriptions[0]}</p>
+        `;
+      })
+      .catch(error => console.error(error));
+  </script>
+
+  <!-- Agrico Ecosystem Section Start -->
+  <section class="agrico_ecosystem" style="background-color: #f7f7f7; padding: 50px 0;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <center>
+            <h2 class="agrico_ecosystem_title" style="color: black;">Agrico Ecosystem</h2>
+            <p class="agrico_ecosystem_subtitle">Connecting Farmers, Industrialists, and Consumers</p>
+          </center>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="agrico_ecosystem_card">
+            <h3 class="agrico_ecosystem_card_title"><i class="fas fa-tractor"></i> Farmers</h3>
+            <p class="agrico_ecosystem_card_text">Produce agricultural products</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="agrico_ecosystem_card">
+            <h3 class="agrico_ecosystem_card_title"><i class="fas fa-industry"></i> Agrico Partners (Offtakers)</h3>
+            <p class="agrico_ecosystem_card_text">Buy produce, process goods, and resale to Agrico</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="agrico_ecosystem_card">
+            <h3 class="agrico_ecosystem_card_title"><i class="fas fa-shopping-cart"></i> Agrico Marketplace</h3>
+            <p class="agrico_ecosystem_card_text">Digital platform for selling processed goods</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col-md-12">
+          <h3 class="agrico_ecosystem_benefits_title">Benefits</h3>
+          <ol class="agrico_ecosystem_benefits_list">
+            <li>Increased Market Access</li>
+            <li>Improved Efficiency and Productivity</li>
+            <li>Economic Growth and Empowerment</li>
+            <li>Enhanced Food Security and Sustainability</li>
+            <li>Digital Inclusion and Innovation</li>
+          </ol>
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <!-- Agrico Ecosystem Section End -->
+
+
+  <style>
+    .agrico_ecosystem {
+      background-color: #f7f7f7;
+      padding: 50px 0;
+    }
+
+    .agrico_ecosystem_title {
+      font-size: 36px;
+      font-weight: 800;
+      color: #34C759;
+    }
+
+    .agrico_ecosystem_subtitle {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .agrico_ecosystem_card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .agrico_ecosystem_card_title {
+      font-size: 24px;
+      font-weight: 600;
+      color: #34C759;
+    }
+
+    .agrico_ecosystem_card_text {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .agrico_ecosystem_benefits_title {
+      font-size: 24px;
+      font-weight: 600;
+      color: #34C759;
+    }
+
+    .agrico_ecosystem_benefits_list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .agrico_ecosystem_benefits_list li {
+      font-size: 16px;
+      color: #666;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Responsive styles */
+
+    @media (max-width: 1200px) {
+      .agrico_ecosystem_card {
+        padding: 15px;
+      }
+
+      .agrico_ecosystem_card_title {
+        font-size: 20px;
+      }
+
+      .agrico_ecosystem_card_text {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .agrico_ecosystem {
+        padding: 30px 0;
+      }
+
+      .agrico_ecosystem_title {
+        font-size: 28px;
+      }
+
+      .agrico_ecosystem_subtitle {
+        font-size: 16px;
+      }
+
+      .agrico_ecosystem_card {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .agrico_ecosystem_card {
+        padding: 10px;
+      }
+
+      .agrico_ecosystem_card_title {
+        font-size: 18px;
+      }
+
+      .agrico_ecosystem_card_text {
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .agrico_ecosystem {
+        padding: 20px 0;
+      }
+
+      .agrico_ecosystem_title {
+        font-size: 22px;
+      }
+
+      .agrico_ecosystem_subtitle {
+        font-size: 14px;
+      }
+
+      .agrico_ecosystem_card {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .agrico_ecosystem_card {
+        padding: 5px;
+      }
+
+      .agrico_ecosystem_card_title {
+        font-size: 16px;
+      }
+
+      .agrico_ecosystem_card_text {
+        font-size: 10px;
+      }
+    }
+  </style>
+
+  <!-- Services Section Start -->
+  <div class="services_section layout_padding">
+    <div class="container">
+      <h1 class="services_heading">National Agricultural Services</h1>
+      <p class="services_subheading">Empowering Farmers, Enhancing Productivity</p>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="call_box">
+            <div class="call_image"><i class="fa fa-leaf" aria-hidden="true"></i></div>
+            <h2 class="emergency_text">Expert Farming Advice</h2>
+            <p class="dolor_text">Personalized guidance on crop management, soil health, and pest control.</p>
+            <a href="#" class="read_more">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="call_box ">
+            <div class="call_image"><i class="fa fa-book" aria-hidden="true"></i></div>
+            <h2 class="emergency_text">Agricultural Knowledge Hub</h2>
+            <p class="dolor_text">Access tutorials, webinars, and resources for enhanced farming practices.</p>
+            <a href="#" class="read_more">Explore Now</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="call_box">
+            <div class="call_image"><i class="fa fa-sun-o" aria-hidden="true"></i></div>
+            <h2 class="emergency_text">Weather Insights</h2>
+            <p class="dolor_text">Stay updated on weather forecasts and climate trends for optimal farming.</p>
+            <a href="#" class="read_more">Get Updates</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="call_box">
+            <div class="call_image"><i class="fa fa-truck" aria-hidden="true"></i></div>
+            <h2 class="emergency_text">Secure Transportation</h2>
+            <p class="dolor_text">Verify and connect with trusted drivers for efficient transportation.</p>
+            <a href="#" class="read_more">Verify Now</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="call_box ">
+            <div class="call_image"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+            <h2 class="emergency_text">National Marketplace</h2>
+            <p class="dolor_text">Buy and sell agricultural products, inputs, and equipment.</p>
+            <a href="#" class="read_more">Start Trading</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="call_box">
+            <div class="call_image"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+            <h2 class="emergency_text">Customized Messenger</h2>
+            <p class="dolor_text">Communicate with fellow farmers, experts, and stakeholders.</p>
+            <a href="#" class="read_more">Join Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Services Section End -->
+  <!-- Farmer Registration Section Start -->
+  <section class="farmer_registration_section">
+    <div class="container">
+      <h2 class="services_heading">Farmer/Driver Registration</h2>
+      <p class="services_subheading">Register with us to access new markets and grow your business.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="registration_info">
+            <h4>Who Can Register?</h4>
+            <ul>
+              <li>Farmers</li>
+              <li>Drivers (for logistics and transportation services)</li>
+            </ul>
+            <h4>Benefits of Registration</h4>
+            <ul>
+              <li>Access to new markets</li>
+              <li>Improved market prices</li>
+              <li>Technical support</li>
+              <li>Financial assistance</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="registration_steps">
+            <h4>Registration Steps</h4>
+            <h5>Physical Registration:</h5>
+            <ol>
+              <li>Visit our office at 123, Agrico Street, Lagos, Nigeria.</li>
+              <li>Meet with our registration team.</li>
+              <li>Provide required documents (ID, business license, etc.).</li>
+              <li>Complete registration form.</li>
+            </ol>
+            <h5>Online Registration:</h5>
+            <ol>
+              <li>Visit our website at <a href="#">www.agrico.com/register</a>.</li>
+              <li>Fill out the online registration form.</li>
+              <li>Upload required documents (ID, business license, etc.).</li>
+              <li>Submit application.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Farmer Registration Section End -->
+
+
+  <!-- Office Location Section Start -->
+  <section class="office_location_section">
+    <div class="container">
+      <h2>Office Location</h2>
+      <p>Visit us at:</p>
+      <address>
+        123, Agrico Street, <br>
+        Lagos, Nigeria.
+      </address>
+      <div class="location_map">
+        <iframe src="https://www.google.com/maps/embed?..." frameborder="0"
+          style="border:0; width: 100%; height: 300px;"></iframe>
+      </div>
+    </div>
+  </section>
+  <!-- Office Location Section End -->
+
+
+  <!-- Contact Information Section Start -->
+  <section class="contact_information_section">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p>Contact us for more information about Agrico's farmer partnership program.</p>
+      <div class="contact_info">
+        <i class="fa fa-phone"></i>
+        <span>+234 803 123 4567</span>
+      </div>
+      <div class="contact_info">
+        <i class="fa fa-envelope"></i>
+        <span>info@agrico.com</span>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Information Section End -->
+  <style>
+    .farmer_registration_section {
+      background-color: #f9f9f9;
+      padding: 50px 0;
+    }
+
+    .registration_info {
+      padding: 20px;
+    }
+
+    .registration_info h4 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #34C759;
+    }
+
+    .registration_info ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .registration_info li {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .registration_steps {
+      padding: 20px;
+    }
+
+    .registration_steps h4 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #34C759;
+    }
+
+    .registration_steps ol {
+      list-style: decimal;
+      padding: 0;
+      margin: 0;
+    }
+
+    .registration_steps li {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+  </style>
+  <!-- Expert Section Start -->
+  <section class="expert_section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="expert_content">
+            <h4 class="about_text">Expert Guidance for Optimal Harvests</h4>
+            <h1 class="highest_text">Trusted Agricultural Experts</h1>
+            <p class="lorem_text">Our experienced agronomists provide personalized advice for sustainable farming
+              practices and maximum crop yields.</p>
+            <a href="#" class="read_bt">Meet Our Experts</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="image_4">
+            <img src="images/woman-holding-tablet-full-shot.png" alt="Agricultural Expert" class="img-fluid"
+              style="width: 70%; height: auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Expert Section End -->
+
+  <!-- Hire Expert Section Start -->
+  <section class="hire_expert_section">
+    <div class="container">
+      <h1 class="contact_text">Hire Our Experts</h1>
+      <div class="row na">
+        <div class="nana">
+          <div class="expert_card">
+            <h4>Agronomists</h4>
+            <p>Expert advice on crop management and soil health</p>
+            <a href="#" class="read_bt rbt">Hire Now</a>
+          </div>
+        </div>
+        <div class="nana">
+          <div class="expert_card">
+            <h4>Veterinarians</h4>
+            <p>Professional care for your livestock and animals</p>
+            <a href="#" class="read_bt rbt">Hire Now</a>
+          </div>
+        </div>
+        <div class="nana">
+          <div class="expert_card">
+            <h4>Food Scientists</h4>
+            <p>Expertise in food safety, processing, and technology</p>
+            <a href="#" class="read_bt rbt">Hire Now</a>
+          </div>
+        </div>
+        <div class="nana">
+          <div class="expert_card">
+            <h4>Soil Specialists</h4>
+            <p>Analysis and recommendations for optimal soil health</p>
+            <a href="#" class="read_bt rbt">Hire Now</a>
+          </div>
+        </div>
+      <!-- </div> -->
+      <!-- <div class="row"> -->
+        <div class="nana">
+          <div class="expert_card">
+            <h4>Crop Protection Specialists</h4>
+            <p>Effective solutions for pest and disease management</p>
+            <a href="#" class="read_bt rbt">Hire Now</a>
+          </div>
+        </div>
+        <div class="nana">
+          <div class="expert_card">
+            <h4>Irrigation Experts</h4>
+            <p>Efficient water management systems for your farm</p>
+            <a href="#" class="read_bt rbt">Hire Now</a>
+          </div>
+        </div>
+        <div class="nana">
+          <div class="expert_card">
+            <h4>Farm Management Consultants</h4>
+            <p>Strategic planning for increased productivity and profit</p>
+            <a href="#" class="read_bt rbt">Hire Now</a>
+          </div>
+        </div>
+        <div class="nana">
+          <div class="expert_card">
+            <h4>Agricultural Engineers</h4>
+            <p>Design and implementation of farm infrastructure & technology</p>
+            <a href="#" class="read_bt rbt">Hire Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hire Expert Section End -->
+
+
+  <!-- Weekly Advice Section Start -->
+  <section class="weekly_advice_section">
+    <div class="container">
+      <h1 class="contact_text">Weekly Expert Farming Advice</h1>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inners">
+              <div class="carousel-item active">
+                <div class="testimonial">
+                  <h2 class="specialist_text">Dr. Emma Taylor</h2>
+                  <h3 class="specialist_designation">Crop Protection Specialist</h3>
+                  <p class="advice_text">"Monitor soil moisture levels to prevent waterlogged fields. Adjust irrigation
+                    schedules for healthy root growth."</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial">
+                  <h2 class="specialist_text">Dr. John Smith</h2>
+                  <h3 class="specialist_designation">Agronomist</h3>
+                  <p class="advice_text">"Use crop rotation to maintain soil fertility and reduce pests and diseases."
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial">
+                  <h2 class="specialist_text">Dr. Maria Rodriguez</h2>
+                  <h3 class="specialist_designation">Soil Scientist</h3>
+                  <p class="advice_text">"Test your soil regularly to determine nutrient deficiencies and adjust
+                    fertilizer applications accordingly."</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial">
+                  <h2 class="specialist_text">Dr. David Lee</h2>
+                  <h3 class="specialist_designation">Irrigation Specialist</h3>
+                  <p class="advice_text">"Install drip irrigation systems to reduce water waste and increase crop
+                    yields."</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial">
+                  <h2 class="specialist_text">Dr. Sophia Patel</h2>
+                  <h3 class="specialist_designation">Entomologist</h3>
+                  <p class="advice_text">"Use integrated pest management techniques to minimize chemical use and protect
+                    beneficial insects."</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Weekly Advice Section End -->
+
+
+  <!-- Call to Action Section Start -->
+  <section class="call_to_action_section">
+    <div class="container">
+      <h1 class="contact_text">Get Started with Agrico Today!</h1>
+      <p>Take the first step towards a more productive and profitable farm.</p>
+      <a href="#" class="read_bt">Contact Us</a>
+    </div>
+  </section>
+  <!-- Call to Action Section End -->
+
+  <style>
+    /* Global Styles */
+    /* Global Styles */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items:center;
+      /* padding: 20px; */
+      /* padding: 10px; */
+    }
+
+    .banner_section {
+      background-color: #f7f7f7;
+      padding: 50px 0;
+    }
+
+    .carousel-inner {
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-item {
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .banner_img video {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .about_section {
+      background-color: #fff;
+      padding: 50px 0;
+    }
+
+    .about_taital {
+      padding: 20px;
+    }
+
+    .about_text {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #34C759;
+    }
+
+    .highest_text {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .lorem_text {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .banner_section {
+      background-color: #f7f7f7;
+      padding: 50px 0;
+    }
+
+    .carousel-inner {
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-item {
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(100%);
+    }
+
+    .banner_img img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+/* 
+    .read_bt {
+      background-color: #34C759;
+      color: #fff;
+      border: none;
+      padding: 18px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .read_bt:hover {
+      background-color: #2ea043;
+      transform: scale(1.1);
+      color: white;
+    } */
+
+    /* Expert Section */
+
+    .expert_section {
+      background-color: #fff;
+      color: #333;
+      padding: 50px 0;
+    }
+
+    .expert_content {
+      padding: 20px;
+    }
+
+    .expert_content h4 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #34C759;
+    }
+
+    .expert_content h1 {
+      font-size: 36px;
+      font-weight: 800;
+      color: #333;
+    }
+
+    .expert_content p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .image_4 {
+      padding: 20px;
+    }
+
+    .image_4 img {
+      width: 80%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Hire Expert Section */
+
+    .hire_expert_section {
+      background-color: #fff;
+      color: #333;
+      /* padding: 50px 0; */
+    }
+
+    .expert_card {
+      background-color: #f7f7f7;
+      /* padding:10px ; */
+      width: 280px;
+     height: 200px;
+     /* margin: 1rem; */
+     padding: 20px 0px;
+      border: 1px solid #ddd;
+      /* border: 1px solid red; */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .expert_card h4 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #34C759;
+    }
+
+    .expert_card p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .banner_section {
+      background-color: #f7f7f7;
+      padding: 50px 0;
+    }
+
+    .carousel-inner {
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-item {
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(100%);
+    }
+
+    .banner_img img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .about_section {
+      background-color: #fff;
+      padding: 50px 0;
+    }
+
+    .about_taital {
+      padding: 20px;
+    }
+
+    .about_text {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #34C759;
+    }
+
+    .highest_text {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .lorem_text {
+      font-size: 16px;
+      color: #666;
+    }
+
+    /* .read_bt {
+      background-color: #34C759;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .read_bt:hover {
+      background-color: #2ea043;
+      transform: scale(1.1);
+    } */
+
+    
+
+    .weather_section {
+      background-color: #f7f7f7;
+      padding: 50px 0;
+    }
+
+    .weather_image img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .weather_info {
+      padding: 20px;
+    }
+
+    .forecast_text {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #34C759;
+    }
+
+    .weather_text {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .weather_description {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .weather_tip {
+      font-size: 14px;
+      color: #999;
+    }
+
+    .learn_more {
+      background-color: #34C759;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .learn_more:hover {
+      background-color: #2ea043;
+      transform: scale(1.1);
+    }
+
+    /* .read_bt {
+      background-color: #34C759;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .read_bt:hover {
+      background-color: #2ea043;
+      transform: scale(1.1);
+    } */
+
+    .weather_section {
+      background-color: #f7f7f7;
+      padding: 50px 0;
+    }
+
+    .weather_image img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .weather_info {
+      padding: 20px;
+    }
+
+    .forecast_text {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #34C759;
+    }
+
+    .weather_text {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .weather_description {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .weather_tip {
+      font-size: 14px;
+      color: #999;
+    }
+
+    .learn_more {
+      background-color: #34C759;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .learn_more:hover {
+      background-color: #2ea043;
+      transform: scale(1.1);
+    }
+
+    .hire_btn {
+      background-color: #34C759;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .hire_btn:hover {
+      background-color: #2ea043;
+      transform: scale(1.1);
+    }
+
+    /* Weekly Advice Section */
+
+    .weekly_advice_section .carousel-indicators li {
+      background-color: #34C759;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+    }
+
+    .weekly_advice_section .carousel-indicators li.active {
+      background-color: #2ea043;
+    }
+
+    .weekly_advice_section .carousel-control-prev,
+    .weekly_advice_section .carousel-control-next {
+      width: 40px;
+      height: 40px;
+      background-color: #34C759;
+      border-radius: 100%;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .weekly_advice_section .carousel-control-prev:hover,
+    .weekly_advice_section .carousel-control-next:hover {
+      background-color: #2ea043;
+    }
+
+    .testimonial {
+      padding: 20px;
+      background-color: #f7f7f7;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #34C759;
+    }
+
+    .testimonial h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #666;
+    }
+
+    .testimonial p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .carousel-inner {
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-item {
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .carousel-caption {
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+
+    .carousel-caption h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .carousel-caption p {
+      font-size: 16px;
+      color: #fff;
+    }
+
+    /* Call to Action Section */
+
+    .call_to_action_section {
+      background-color: #34C759;
+      color: #fff;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .call_to_action_section h1 {
+      font-size: 36px;
+      font-weight: 800;
+    }
+
+    .call_to_action_section p {
+      font-size: 18px;
+    }
+
+    .call_to_action_section .read_bt {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .call_to_action_section .read_bt:hover {
+      background-color: #2ea043;
+    }
+
+    .services_section {
+      background-color: #f7f7f7;
+      padding: 50px 0;
+    }
+
+    .services_heading {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .services_subheading {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #666;
+    }
+
+    .call_box {
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .call_box:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .call_image {
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .call_image i {
+      background-color: #34C759;
+      padding: 10px;
+      border-radius: 100%;
+      color: #fff;
+    }
+
+    .emergency_text {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #34C759;
+    }
+
+    .dolor_text {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .read_more {
+      background-color: #34C759;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .read_more:hover {
+      background-color: #2ea043;
+      color: white;
+      font-weight: bold;
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .call_box {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .call_box {
+        margin-bottom: 50px;
+      }
+    }
+
+    .weather_section {
+      background-color: #f7f7f7;
+      padding: 50px 0;
+    }
+
+    .weather_image {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .weather_image img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .weather_info {
+      padding: 20px;
+    }
+
+    .forecast_text {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #34C759;
+    }
+
+    .weather_text {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .weather_description {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .weather_tip {
+      font-size: 14px;
+      font-style: italic;
+      color: #999;
+      margin-top: 20px;
+    }
+
+    .learn_more {
+      background-color: #34C759;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .learn_more:hover {
+      background-color: #2ea043;
+      transform: scale(1.1);
+    }
+
+    #iframe {
+      border: none;
+      width: 100%;
+      height: 250px;
+    }
+  </style>
+  <!-- footer section start -->
+  <!-- info section -->
+  <div class="info_section layout_padding">
+    <div class="container ">
+      <div class="info_content">
+        <div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="d-flex">
+                <h5>
+                  About Agrico
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="">
+                      Our Story
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Our Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Meet Our Experts
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Careers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+                <ul class="ml-3 ml-md-5">
+                  <li>
+                    <a href="">
+                      Crop Management
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Soil Analysis
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Irrigation Systems
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Farm Equipment
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex">
+                <h5>
+                  Our Services
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="">
+                      Crop Protection
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Fertilizer Application
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Pest Control
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Soil Testing
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Consultation
+                    </a>
+                  </li>
+                </ul>
+                <ul class="ml-3 ml-md-5">
+                  <li>
+                    <a href="">
+                      Greenhouse Management
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Farm Automation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Agricultural Research
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Market Analysis
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex">
+                <h5>
+                  Resources
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="">
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      FAQs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Terms & Conditions
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Resource Library
+                    </a>
+                  </li>
+                </ul>
+                <ul class="ml-3 ml-md-5">
+                  <li>
+                    <a href="">
+                      Videos
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Infographics
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Webinars
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Messaging
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-baseline">
+          <div class="social-box">
+            <a href="">
+              <img src="images/fb-icon.png" alt="" />
+            </a>
+
+            <a href="">
+              <img src="images/twitter-icon.png" alt="" />
+            </a>
+            <a href="">
+              <img src="images/linkedin-icon.png" alt="" />
+            </a>
+            <a href="">
+              <img src="images/instagram-icon.png" alt="" />
+            </a>
+          </div>
+          <div class="form_container mt-5">
+            <form action="">
+              <label for="subscribeMail">
+                Newsletter
+              </label>
+              <input type="email" placeholder="Enter Your email" id="subscribeMail" />
+              <button type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end info section -->
+  <!-- footer section end -->
+  <!-- copyright section start -->
+  <div class="copyright_section">
+    <div class="container">
+      <p class="copyright">2024 Agrico. All Rights Reserved.</p>
+    </div>
+  </div>
+  <!-- copyright section end -->
+
+  <!-- Javascript files-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/plugin.js"></script>
+  <!-- sidebar -->
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/custom.js"></script>
+  <!-- javascript -->
+  <script src="js/owl.carousel.js"></script>
+  <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
