@@ -245,15 +245,15 @@ button {
   padding-top: 60px;
 }
 
-.logo {
+/* .logo {
   width: 15%;
   float: left;
-}
+} */
 
-.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show > .nav-link {
+.navbar-light .navbar-nav .show>.nav-link {
   color: #0cd268;
 }
 
@@ -397,6 +397,7 @@ button {
   color: #000;
   border-radius: 100%;
 }
+
 /* .carousel-item{
      height: 100vh;
      display: flex;
@@ -430,22 +431,27 @@ button {
   padding-left: 4.5rem;
   padding-right: 1.2rem;
 }
+
 .Head_container p {
   font-size: 4rem;
   line-height: 4rem;
 }
+
 .Head_container .text-1 {
   font-weight: bold;
   color: #0cd268;
 }
+
 .Head_container .text-1 span {
   /* font-style:italic; */
   color: white;
   font-size: 3rem;
 }
+
 .Head_container .text-2 {
   font-size: 2rem;
 }
+
 .Head_container button {
   cursor: pointer;
   /* font-family: "Lato", sans-serif; */
@@ -455,6 +461,7 @@ button {
   padding: 13px 28px;
   margin-right: 1.5rem;
 }
+
 .Head_container #shop_now {
   color: #000000;
   /* color: white; */
@@ -468,6 +475,7 @@ button {
     border: 1px solid #ffffff; */
   }
 }
+
 .Head_container #find_more {
   /* color: #ffffff;
   background-color: transparent;
@@ -520,23 +528,6 @@ button {
   font-size: 16px;
 }
 
-.read_bt {
-  font-size: 18px;
-  /* background-color: #09d066; */
-  background-color: #34c759;
-  /* #34C759 */
-  color: #ffffff;
-  padding: 10px 20px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.read_bt:hover {
-  /* background-color: #303036; */
-  background-color: transparent;
-  border: 1px solid #34c759;
-  color: #34c759;
-}
 .rbt:hover {
   background-color: #34C759;
   scale: 1.1;
@@ -549,6 +540,7 @@ button {
   float: left;
   padding-top: 25px;
 }
+/*  */
 
 .care_section {
   width: 100%;
@@ -583,7 +575,11 @@ button {
   font-weight: bold;
   text-align: right;
 }
-
+.logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 .ipsum_text {
   width: 100%;
   float: left;
@@ -940,7 +936,7 @@ button {
   height: auto;
 }
 
-.copyright {
+Head .copyright {
   width: 100%;
   float: left;
   font-size: 18px;
@@ -1055,16 +1051,104 @@ button {
 }
 
 @media (max-width: 767px) {
+  #Head {
+    color: white;
+    /* color:red; */
+    text-align: left;
+    padding-top: 160px;
+    padding-bottom: 250px;
+    background-size: cover;
+    position: relative;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/agricImg/farmer.jpeg");
+    /* height: 100vh; */
+    /* padding-left: 2rem */
+  }
+
+  .Head_container {
+    /* font-size: 4rem; */
+    /* font-family: "Lato", sans-serif; */
+
+    padding-left: 2rem;
+    padding-right: 1.2rem;
+  }
+
+  .Head_container p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .Head_container .text-1 {
+    font-weight: bold;
+    color: #0cd268;
+  }
+
+  .Head_container .text-1 span {
+    /* font-style:italic; */
+    color: white;
+    font-size: 3rem;
+  }
+
+  .Head_container .text-2 {
+    font-size: 2rem;
+  }
+
+  .Head_container button {
+    cursor: pointer;
+    /* font-family: "Lato", sans-serif; */
+    font-size: 12.768px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 13px 28px;
+    margin-right: 1.5rem;
+  }
+
+  .Head_container #shop_now {
+    color: #000000;
+    /* color: white; */
+    background-color: #0cd268;
+
+    &:hover {
+      background-color: transparent;
+      color: #0cd268;
+      border: 1px solid #0cd268;
+      /* color: #ffffff;
+      border: 1px solid #ffffff; */
+    }
+  }
+
   .destop_header {
     display: none;
   }
+
 
   .mobile_header {
     display: block;
   }
 }
 
-.mobile_header {
+.Head_container #shop-now,
+.Head_container #shop-now-2 {
+  color: #000000;
+  background-color: #0cd268;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.Head_container #shop-now:hover,
+.Head_container #shop-now-2:hover {
+  background-color: transparent;
+  color: #0cd268;
+  border: 1px solid #0cd268;
+}
+
+r .mobile_header {
   display: none;
 }
 
@@ -1437,15 +1521,18 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .container .row {
   display: flex;
   /* gap: 1rem; */
   justify-content: center;
-  
+
 }
+
 .na {
   gap: 1rem;
 }
+
 .row .nana {
   /* width: 100%; */
   /* width: 300px; */
