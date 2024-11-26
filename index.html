@@ -301,6 +301,7 @@
     }
   </style>
 
+
   <!-- Weather Forecast Section Start -->
   <div class="weather_section layout_padding" style="background-color: #f7f7f7; padding: 50px 0;">
     <div class="container-fluid">
@@ -311,6 +312,11 @@
               alt="Agricultural Weather Image"
               style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
           </div>
+          <!-- <div id="ww_961f37e61f854" v='1.3' loc='auto'
+            a='{"t":"responsive","lang":"en","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#00000000"}'>
+            <a href="https://weatherwidget.org/" id="ww_961f37e61f854_u" target="_blank">HTML Weather widgets</a>
+          </div>
+          <script async src="https://app3.weatherwidget.org/js/?id=ww_961f37e61f854"></script> -->
         </div>
         <div class="col-md-6">
           <div class="weather_info">
@@ -323,6 +329,10 @@
               <p id="current-weather"></p>
             </div>
             <p class="weather_tip">Plan your farming schedule with confidence using our accurate weather forecasts.</p>
+            <!-- Search Button -->
+            <button id="search-btn"
+              style="background-color: #4CAF50; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Search
+              for Your Precise Location</button>
           </div>
         </div>
       </div>
@@ -330,6 +340,14 @@
   </div>
   <!-- Weather Forecast Section End -->
 
+  <script>
+    document.getElementById("search-btn").addEventListener("click", function () {
+      const city = prompt("Enter city name:");
+      if (city) {
+        window.location.href = `https://openweathermap.org/city/${city}`;
+      }
+    });
+  </script>
   <script>
     (function (d, s, id) {
       if (d.getElementById(id)) {
